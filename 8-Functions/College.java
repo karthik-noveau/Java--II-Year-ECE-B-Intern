@@ -2,23 +2,35 @@ public class College{
 
     public static void main(String[] args){
 
+        int month = 5;
 
-        int month1 = 5;
-        int month2 = 6;
+        College obj1 = new College();
+        obj1.MECH();
+        obj1.MECH();
+        obj1.MECH();
 
-        College obj = new College();
 
-        obj.MECH(month1);  // arguments or parameters
+        ECE();
+        ECE();
+        ECE();
 
-        obj.MECH(month2);
-        
+        System.out.println(obj1.add);
 
     }
 
-    public void MECH(int month){
-        System.out.println(month + " MECH Symposiym has executed");
+
+    int add = 10;  // instance variable
+
+    public void MECH(){ // instance method
+        System.out.println( " MECH Symposiym has executed");
     }
 
-   
+    public static void ECE(){  // instance method
+        System.out.println( " ECE Symposiym has executed");
+    }
 
 }
+
+
+
+//
